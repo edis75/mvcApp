@@ -1,0 +1,17 @@
+﻿@model IEnumerable<mvcApp.Models.Person>
+
+@foreach (var item in Model)
+{
+    <tr data-id="@item.Id">
+        <td class="person-name">@item.Name</td>
+        <td class="person-title">@item.Title</td>
+        <td class="person-email">@item.Email</td>
+        <td class="person-adress">@item.Adress</td>
+        <td>
+            <button type="button" class="btn btn-primary btn-sm edit-btn">Edit</button>
+            <button type="button" class="btn btn-danger btn-sm delete-btn">Delete</button>
+        </td>
+    </tr>
+}
+
+
